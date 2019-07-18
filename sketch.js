@@ -29,6 +29,7 @@ let attackButtons2 = [];
 
 let gif_createImg1;
 let gif_createImg2;
+let pokemonImg;
 
 let winner = null;
 
@@ -36,6 +37,8 @@ function preload(){
     gif_createImg1 = createImg("squirtle.gif");
 
     gif_createImg2 = createImg("bulbasaur.gif");
+
+    pokemonImg = createImg("pokemon-logo.png")
 }
 
 function setup(){
@@ -73,12 +76,12 @@ function damage2(){
     }
 }
 
-function displayTitle(){
-    fill("black")
-    textSize(50);
-    textFont("Georgia")
-    text("Pokemon Battle!", 25, 75);
-}
+// function displayTitle(){
+//     fill("black")
+//     textSize(50);
+//     textFont("Helvetica")
+//     text("Pokémon Battle!", 35, 115);
+// }
 
 let player = "player1";
 
@@ -103,7 +106,8 @@ function draw(){
         }
     }
 
-    displayTitle()
+    // displayTitle()
+
     // Pokemon1
     fill(255, 252, 196);
     rect(0, 200, 450, 400);
@@ -133,6 +137,9 @@ function draw(){
     gif_createImg2.position(675, 72.5);
     gif_createImg2.size(200, 200);
 
+    // Pokemon Logo
+    pokemonImg.position(30, 30);
+    pokemonImg.size(400, 147.2);
 
     displayHealth()
     
