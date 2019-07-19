@@ -108,10 +108,10 @@ function draw(){
 
     // displayTitle()
 
-    // Pokemon1
+    // Pokémon1
     fill(255, 252, 196);
     rect(0, 200, 450, 400);
-    // Pokemon2
+    // Pokémon2
     rect(550, 0, 450, 400);
 
     fill(255, 255, 255);
@@ -137,10 +137,9 @@ function draw(){
     gif_createImg2.position(675, 72.5);
     gif_createImg2.size(200, 200);
 
-    // Pokemon Logo
+    // Pokémon Logo
     pokemonImg.position(30, 30);
     pokemonImg.size(400, 147.2);
 
     displayHealth()
-    
 }
